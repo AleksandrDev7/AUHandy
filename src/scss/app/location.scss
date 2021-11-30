@@ -1,0 +1,59 @@
+.location {
+  .title-line {
+    padding-bottom: 55px;
+  }
+
+  .row-map {
+    width: 480px;
+    height: 430px;
+    background-color: #fff;
+
+    #map {
+      position: relative;
+      top: 5px;
+      left: 5px;
+      width: 470px;
+      height: 420px;
+    }
+  }
+
+  .location_form {
+    input {
+      width: 260px;
+      height: 50px;
+      margin-right: 15px;
+      margin-bottom: 20px;
+      padding: 10px 0 10px 20px;
+      background-color: #fff;
+      border: 1px solid transparent;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+
+      &::placeholder {
+        color: #666;
+      }
+    }
+
+    textarea {
+      width: 535px;
+      height: 150px;
+      padding: 10px 0 10px 20px;
+      background-color: #fff;
+      border: 1px solid transparent;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      resize: none;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media screen and (max-device-width: 530px) {
+  .location {
+    .row-map {
+      max-width: 100%;
+    }
+  }
+}

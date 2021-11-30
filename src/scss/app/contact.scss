@@ -1,0 +1,169 @@
+.contact {
+  .footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  .footer-list {
+    color: #999;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 22px;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    li {
+      position: relative;
+      padding-bottom: 15px;
+
+      &::before {
+        content: '';
+        background-image: url("/images/arrow_list.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        top: 6px;
+        left: -20px;
+      }
+    }
+  }
+
+  .ellipse_img {
+    width: 50px;
+    height: 50px;
+    background-color: #252525;
+    border-radius: 50%;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 33%;
+      top: 30%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .col-12 {
+    padding: 0;
+  }
+
+  .footer_item {
+    padding-bottom: 10px;
+
+    .tel-number {
+      margin-left: 20px;
+      margin-bottom: 0;
+      font-weight: 700;
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .contacts {
+      margin-left: 20px;
+      margin-bottom: 0;
+      font-size: 15px;
+      font-weight: normal;
+      color: #999;
+    }
+  }
+
+  .discount {
+    width: 100%;
+    height: 80%;
+    border: 1px dashed #404040;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &_text {
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 22px;
+      margin-bottom: 10px;
+
+      span {
+        font-size: 55px;
+        font-weight: 900;
+        color: #ffb619;
+      }
+    }
+
+    &_services {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &_code {
+      font-size: 15px;
+      font-weight: 400;
+      padding-top: 50px;
+
+      span {
+        text-transform: uppercase;
+        color: #ffb619;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 992px) {
+  .contact {
+    .container {
+      .row {
+        .col-4 {
+          .discount {
+            max-width: 100%;
+            height: 50%;
+            .row {
+              .discount_code {
+                padding-top: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  .contact {
+    .container {
+      .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .col-4 {
+          max-width: 100%;
+
+          .discount {
+            padding-top: 40px;
+          }
+
+          .col-12 {
+            .footer_item {
+              display: flex;
+              flex-direction: row;
+              align-content: center;
+            }
+          }
+
+          .row {
+            display: flex;
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}

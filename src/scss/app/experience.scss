@@ -1,0 +1,24 @@
+.experience {
+  background-image: url("/images/background_wall.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #333;
+  padding: 55px 0;
+
+  .container {
+    .row {
+      .col {
+        .text {
+          font-size: 24px;
+          line-height: 22px;
+          font-weight: bold;
+          margin: 0;
+        }
+      }
+
+      .tel {
+        text-align: right;
+      }
+    }
+  }
+}

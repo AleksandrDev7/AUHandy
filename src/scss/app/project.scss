@@ -1,0 +1,176 @@
+.collapse-style {
+  padding: 40px 0 35px 0;
+
+  .btn-primary {
+    color: #333;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    border: 1px transparent solid;
+
+    &:hover {
+      color: #ffb619;
+      background-color: transparent;
+      border: 1px transparent solid;
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: none;
+      border: 1px transparent solid;
+      color: #ffb619;
+    }
+  }
+}
+
+.card-body {
+  .item {
+    position: relative;
+
+    &:hover .bk {
+      cursor: pointer;
+      opacity: 0.8;
+      transition: opacity .3s ease-in-out;
+    }
+
+    &:hover .title {
+      opacity: 1;
+      transition: opacity .3s ease-in-out;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .bk {
+      width: 100%;
+      height: 100%;
+      background-color: #1c3e9b;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .3s ease-in-out;
+    }
+
+    .title {
+      position: absolute;
+      top: 40%;
+      left: 18%;
+      color: #fff;
+      opacity: 0;
+
+      .row {
+        .title_head {
+          color: #ffb619;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 22px;
+          margin: 0;
+          padding-bottom: 5px;
+        }
+
+        .title_text {
+          font-size: 15px;
+          color: #ccc;
+          line-height: 24px;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 1200px) {
+  .our-project {
+    .multi-collapse {
+      .card-body {
+        .row {
+          .col-4 {
+            .item {
+              .title {
+                left: 4%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 1000px) {
+  .our-project {
+    .multi-collapse {
+      .card-body {
+        .row {
+          .col-4 {
+            .item {
+              .title {
+                left: 6%;
+                top: 30%;
+
+                .title_head {
+                  font-size: 15px;
+                }
+                .title_text {
+                  font-size: 12px;
+                }
+
+                img {
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 1000px) {
+  .our-project {
+    .multi-collapse {
+      .card-body {
+        .row {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .col-4 {
+            max-width: 100%;
+
+            .item {
+              width: 100%;
+
+              .title {
+                width: 100%;
+                left: 0;
+
+                .title_head {
+                  font-size: 15px;
+                }
+                .title_text {
+                  font-size: 12px;
+                }
+              }
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,214 @@
+body{
+  background: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.fixed-page {
+  overflow: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+}
+
+section {
+  padding: 80px 0 120px 0;
+}
+
+.wrapper{
+  margin: 0 auto;
+
+  .img-wrapper{
+    height: 260px;
+  }
+  .card-text{
+    height: 74px;
+    overflow: hidden;
+  }
+}
+
+.header-top {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.main_page {
+  background-image: url("/images/background_1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 118px 0 132px 0;
+  color: #fff;
+}
+
+.services {
+  background-image: url("/images/background_2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 80px 0 100px 0;
+  color: #fff;
+}
+
+.problems {
+  background-image: url("/images/background_3.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 170px 0 215px 0;
+  color: #fff;
+}
+
+.location {
+  background-image: url("/images/background_wall_2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 80px 0 100px 0;
+  color: #fff;
+}
+
+.contact {
+  background-color: #1a1a1a;
+  padding: 57px 0 160px 0;
+  color: #ccc;
+}
+
+.question {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 52px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 45px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #333;
+  padding-bottom: 20px;
+}
+
+.title-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-white {
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.white {
+  color: #fff;
+}
+
+.line {
+  width: 60px;
+  height: 3px;
+  background-color: #1c3e9b;
+
+}
+
+.col {
+  padding: 0;
+}
+
+.btn-normal,
+.btn-light,
+.btn-tel {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 37px;
+  color: #fff;
+  border-radius: 0;
+}
+
+.btn-normal,
+.btn-tel {
+  background-color: #ffb619;
+  border: 2px #ffb619 solid;
+}
+
+.btn-light {
+  background-color: transparent;
+  border: 2px #ccc solid;
+}
+
+
+.btn-tel {
+  position: relative;
+  padding: 16px 37px 16px 50px;
+
+  &:hover::before {
+    background-image: url("/images/phone_hover.svg");
+    transition: all .3s ease;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    background-image: url("/images/phone.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all .3s ease;
+  }
+}
+
+.btn-top {
+  padding-top: 60px;
+}
+
+@media screen and (max-device-width: 768px) {
+  .main_page {
+    padding: 118px 0 80px 0;
+  }
+
+  section {
+    padding: 80px 0 60px 0;
+  }
+
+  .problems {
+    padding: 80px 0 80px 0;
+  }
+
+  .location {
+    padding: 80px 0 80px 0;
+  }
+
+  .contact {
+    padding: 80px 0 80px 0;
+  }
+
+  h2 {
+    padding-top: 20px;
+  }
+
+  .btn-normal,
+  .btn-light,
+  .btn-tel {
+    padding: 12px 12px;
+    margin: 0;
+    height: 50px;
+  }
+
+  .btn-tel {
+    padding: 12px 12px 12px 30px;
+
+    &::before {
+      top: 14px;
+      left: 10px;
+    }
+  }
+}
