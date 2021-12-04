@@ -30,7 +30,7 @@ section {
 }
 
 .main_page {
-  background-image: url("/images/background_1.png");
+  background-image: url("../images/background_1.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 118px 0 132px 0;
@@ -38,7 +38,7 @@ section {
 }
 
 .services {
-  background-image: url("/images/background_2.png");
+  background-image: url("../images/background_2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 80px 0 100px 0;
@@ -46,7 +46,7 @@ section {
 }
 
 .problems {
-  background-image: url("/images/background_3.png");
+  background-image: url("../images/background_3.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 170px 0 215px 0;
@@ -54,7 +54,7 @@ section {
 }
 
 .location {
-  background-image: url("/images/background_wall_2.png");
+  background-image: url("../images/background_wall_2.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 80px 0 100px 0;
@@ -148,7 +148,7 @@ h2 {
   padding: 16px 37px 16px 50px;
 
   &:hover::before {
-    background-image: url("/images/phone_hover.svg");
+    background-image: url("../images/phone_hover.svg");
     transition: all .3s ease;
   }
 
@@ -159,7 +159,7 @@ h2 {
     left: 18px;
     width: 20px;
     height: 20px;
-    background-image: url("/images/phone.svg");
+    background-image: url("../images/phone.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     transition: all .3s ease;
